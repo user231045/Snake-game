@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&display=swap" rel="stylesheet">
+    <title>Snake</title>
+    <link rel="icon" type="image/x-icon" href="icon_snake.png">
+    <link rel="stylesheet" href="./style.css">
+    <script src="./script.js" defer></script>
+</head>
+
+<body>
+    <div>
+        <div class="scores">
+            <h1 id="score">000</h1>
+            <h1 id="highScore">000</h1>
+        </div>
+        <div class="game-border-1">
+            <div class="game-border-2">
+                <div class="game-border-3">
+                    <div id="game-board">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="color-selector">
+        <label for="snake-color">Choose Snake Color:</label>
+        <select id="snake-color">
+            <option value="basic">Basic</option>
+            <option value="yellow">Yellow</option>
+            <option value="purple">Purple</option>
+            <option value="green">Green</option>
+            <option value="blue">Blue</option>
+        </select>
+    </div>
+    <h1 id="instruction-text">Press spacebar to start the game</h1>
+    <img id="logo" src="game_logo.png" alt="snake-logo">
+    <audio id="eatSound" src="eat_food.mp3" preload="auto"></audio>
+    <audio id="gameOverSound" src="game_over.wav" preload="auto"></audio>
+
+
+</body>
+
+</html>

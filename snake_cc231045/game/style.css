@@ -1,0 +1,170 @@
+/* Global styles */
+.kalam-light {
+    font-family: "Kalam", cursive;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.kalam-regular {
+    font-family: "Kalam", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.kalam-bold {
+    font-family: "Kalam", cursive;
+    font-weight: 700;
+    font-style: normal;
+}
+
+/* Game styles */
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    font-family: kalam;
+}
+
+body {
+    background-color: #414141;
+}
+
+/*snake styles*/
+.snake {
+    width: 20px;
+    height: 20px;
+    border-radius: 15%;
+    /* Making the snake segments kinda a little circular */
+    background-color: var(--snake-color, #414141);
+    /* Default to gray if --snake-color is not set */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    /*adding a subtle box shadow */
+    transition: background-color 0.3s;
+    /*smooth color transition */
+}
+
+.snake:hover {
+    background-color: #4CAF50;
+    /* Optional: Change color on hover */
+}
+
+/*game board styles*/
+#game-board {
+    border-radius: 100px;
+    display: grid;
+    grid-template-columns: repeat(20, 20px);
+    grid-template-rows: repeat(20, 20px);
+    margin: 5px;
+}
+
+.game-border-1 {
+    border: #74546f solid 10px;
+    border-radius: 30px;
+    box-shadow: inset 0 0 0 10px #74546f;
+}
+
+.game-border-2 {
+    border: #bc89b5 solid 8px;
+    border-radius: 26px;
+    box-shadow: inset 0 0 0 10px #bc89b5;
+}
+
+.game-border-3 {
+    border: #9a6f93 solid 30px;
+    border-radius: 20px;
+    box-shadow: inset 0 0 0 5px #9a6f93;
+}
+
+/*instruction text styles*/
+#instruction-text {
+    position: absolute;
+    top: 60%;
+    color: #333;
+    width: 300px;
+    text-align: center;
+    text-transform: capitalize;
+    padding: 30px;
+    margin: 0;
+}
+
+/*score styles*/
+.scores {
+    display: flex;
+    justify-content: space-between;
+}
+
+#score {
+    color: #bc89b5;
+}
+
+#score,
+#highScore {
+    font-size: 40px;
+    font-weight: bolder;
+    margin: 10px 0;
+
+}
+
+#highScore {
+    color: #d8ddca;
+    display: none;
+}
+
+.game-border-3,
+#logo {
+    background-color: #d6a4cf;
+}
+
+.snake {
+    border: #5a5a5a 1px dotted;
+}
+
+/*food styles*/
+.food {
+    background-color: #ff0000;
+    border: #ff0000 2px solid;
+    border-radius: 25px;
+}
+
+#logo {
+    position: absolute;
+    width: 180px;
+    height: auto;
+}
+
+/*color selector styles*/
+#color-selector {
+    position: absolute;
+    top: 50%;
+    right: 10%;
+    transform: translateY(-50%);
+    background-color: #555;
+    padding: 15px;
+    border-radius: 15px;
+    text-align: center;
+    color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+/* label and select styles */
+label {
+    font-size: 16px;
+    margin-bottom: 8px;
+}
+
+select {
+    padding: 10px;
+    font-size: 14px;
+    border: none;
+    border-radius: 8px;
+    background-color: #333;
+    color: #fff;
+}
+
+select:hover,
+select:focus {
+    background-color: #74546f;
+    outline: none;
+}
